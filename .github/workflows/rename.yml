@@ -1,0 +1,30 @@
+name: Rename Project Keywords
+
+on:
+  workflow_dispatch:   # run manually from Actions tab
+
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}   # default GitHub token
+
+      - name: Replace "shofy" with "amoha"
+        run: |
+          git grep -l 'shofy' | grep -v '.github/workflows' | xargs sed -i 's/shofy/amoha/g'
+
+      - name: Replace "jewelry" with "jewellery"
+        run: |
+          git grep -l 'jewelry' | grep -v '.github/workflows' | xargs sed -i 's/jewelry/jewellery/g'
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Automated rename: shofy → amoha, jewelry → jewellery" || echo "No changes to commit"
+          git push
