@@ -72,7 +72,7 @@ To get started with Shofy, follow these steps:
 1. Clone the repository:
 
    ```bash
-   https://github.com/Hamed-Hasan/amoha-Jewelry-ecommerce-client.git
+   
    ```
 
 2. Install dependencies:
@@ -107,11 +107,11 @@ To get started with Shofy, follow these steps:
 
 ## Client Side Repo
 
-[Shofy Client Side Repo](https://github.com/Hamed-Hasan/amoha-Jewelry-ecommerce-client.git)
+[Shofy Client Side Repo]()
 
 ## Server Side Repo
 
-[Shofy Server Side Repo](https://github.com/Hamed-Hasan/amoha-Jewelry-ecommerce-backend.git)
+[Shofy Server Side Repo]()
 
 ## Sources and Credits
 
