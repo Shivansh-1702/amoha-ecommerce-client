@@ -46,7 +46,7 @@ const slider_setting = {
 
 const PopularProducts = () => {
   const { data: products, isError, isLoading } =
-    useGetProductTypeQuery({ type: 'jewelry', query: `new=true` });
+    useGetProductTypeQuery({ type: 'jewellery', query: `new=true` });
   // decide what to render
   let content = null;
 

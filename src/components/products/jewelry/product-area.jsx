@@ -11,7 +11,7 @@ const ProductArea = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const activeRef = useRef(null);
   const marker = useRef(null);
-  const { data: products, isError, isLoading } = useGetProductTypeQuery({ type: 'jewelry' });
+  const { data: products, isError, isLoading } = useGetProductTypeQuery({ type: 'jewellery' });
   // handleActiveTab
   useEffect(() => {
     // Position the marker after the active tab has been updated

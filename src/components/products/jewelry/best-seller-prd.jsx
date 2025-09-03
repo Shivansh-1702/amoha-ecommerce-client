@@ -39,7 +39,7 @@ const slider_setting = {
 
 const BestSellerPrd = () => {
   const { data: products, isError, isLoading } =
-    useGetProductTypeQuery({ type: 'jewelry', query: `topSeller=true` });
+    useGetProductTypeQuery({ type: 'jewellery', query: `topSeller=true` });
   // decide what to render
   let content = null;
 

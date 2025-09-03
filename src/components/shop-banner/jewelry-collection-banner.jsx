@@ -60,7 +60,7 @@ const JewelryCollectionBanner = () => {
                         </div>
                         <div className="tp-collection-content-4">
                           <h3 className="tp-collection-title-4">
-                            <Link href="/shop">Our finest jewelry</Link>
+                            <Link href="/shop">Our finest jewellery</Link>
                           </h3>
                           <div className="tp-collection-btn-4">
                             <Link href="/shop" className="tp-link-btn-line-2">
